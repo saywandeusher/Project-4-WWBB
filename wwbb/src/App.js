@@ -1,10 +1,10 @@
 import React from  'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import Media from './Media';
-import Contact from './Contact';
+import Home from './views/Home';
+import About from './views/About';
+import Media from './views/Media';
+import Contact from './views/Contact';
 
 class App extends React.Component{
   constructor() {
@@ -16,6 +16,7 @@ class App extends React.Component{
     return (
       <Router>
         <div className="container">
+        
             <div className="nav-logo">
               <p>WWBB</p>
             </div>
