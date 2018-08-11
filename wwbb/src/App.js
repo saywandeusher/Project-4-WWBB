@@ -1,7 +1,11 @@
 import React from  'react';
 import ReactDOM from 'react-dom';
 import LoginForm from './components/loginform'
-
+import NavBar from './components/navBar';
+import Home from './Home';
+import About from './About';
+import Media from './Media';
+import Contact from './Contact';
 
 class App extends React.Component{
   constructor() {
@@ -9,19 +13,20 @@ class App extends React.Component{
     this.state = {};
   }
 
+
+
   render() {
     return (
       <div className="container">
-        hello!! this works! {this.props.greeting}
-        <br />
-        <LoginForm />
+        <NavBar />
+        {/* hello!! this works! {this.props.greeting} */}
       </div>
     )
   }
 }
 
 ReactDOM.render(
-  <App greeting="AT LONG LAST." />,
+  <App greeting="AT LONG LAST" />,
   document.getElementById('app')
 )
 

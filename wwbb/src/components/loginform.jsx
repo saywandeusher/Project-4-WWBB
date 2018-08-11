@@ -29,10 +29,10 @@ render() {
   return (
     <div className="LoginForm">
       <form>
-        <label style={styles.labels} for="username">User Name:</label>
+        <label style={styles.labels} >User Name:</label>
         <input name="username" type="text" value={this.state.username} onChange={this.changeHandler}/>
         <br />
-        <label style={styles.labels} for="username">Password:</label>
+        <label style={styles.labels} >Password:</label>
         <input name="password" type="text" value={this.state.password} onChange={this.changeHandler}/>
         <br />
         <input type="submit" value="login" />
