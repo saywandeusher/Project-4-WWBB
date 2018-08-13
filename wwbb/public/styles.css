@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+header {
+  margin: 2% 8%;
+
+}
+
+.brand-logo ,.material-icons {
+  position: fixed;
+}
+
+.main-content {
+  text-align: center;
+}
+

@@ -5,7 +5,7 @@ export default class About extends React.Component {
 
   render() {
     return (
-      <div id="About" className= "about-content">
+      <div id="about" className= "main-content">
         
         <div className="about-content-1">
           <h1>About Us</h1>

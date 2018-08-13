@@ -16,8 +16,9 @@ class App extends React.Component{
   render() {
     return (
       <Router>
-        <div className="container">
-          <div className="nav-container">
+        <div className="container-fluid">
+        <header>
+          <div className="sticky-nav">
 
             <a href="/" className="brand-logo">WWBB</a>
 
@@ -38,19 +39,22 @@ class App extends React.Component{
               <a href="#" data-target="slide-out" className="sidenav-trigger right"><i className="material-icons">menu</i></a>
 
           </div>
+          </header>
 
-            <hr />
-
+          <main>
+            <div className="container">
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/media" component={Media} />
             <Route path="/contact" component={Contact} />
+            </div>
+          </main>
 
-            <hr />
-
-            <div className="footer">
+          <footer>
+            <div className="container">
               <p>This is the footer lol..</p>
             </div>
+          </footer>
         </div> 
       </Router>
     );

@@ -1,11 +1,5 @@
 import React from 'react'
 
-const styles = {
-  labels: {
-    color: 'red'
-  }
-}
-
 export default class Form extends React.Component {
   constructor() {
     super();
@@ -36,26 +30,46 @@ handleClick = (event) => {
 
 render() {
   return (
-    <div className="Form" onSubmit={this.handleClick}>
-      <form>
-        <label style={styles.labels} >Name:</label>
-        <input name="name" type="text" value={this.state.name} onChange={this.changeHandler}/>
-        <br />
-        <label style={styles.labels} >Email:</label>
-        <input name="email" type="text" value={this.state.email} onChange={this.changeHandler}/>
-        <br />
-        <label style={styles.labels} >Subject:</label>
-        <input name="subject" type="text" value={this.state.subject} onChange={this.changeHandler}/>
-        <br />
-        <label style={styles.labels} >Quote:</label>
-        <input name="quote" type="text" value={this.state.quote} onChange={this.changeHandler}/>
-        <br />
-        <label style={styles.labels} >Message:</label>
-        <input name="message" type="text" value={this.state.message} onChange={this.changeHandler}/>
-        <br />
-        <input type="submit" value="Submit" />
-        </form>
-    </div>
+    <div className="row">
+    <div class="col s12 m4 l2"></div>
+    <div className="col s12 m4 l8">
+    <div className="card-panel z-depth-5">
+      <form onSubmit={this.handleClick}>
+
+        <h4>Want a performance from us?</h4>
+        <h5>Contact Us now!</h5><br />
+
+        <div className="input-field">
+          <label className="active" >Name:</label>
+          <input name="name" type="text" value={this.state.name} onChange={this.changeHandler}/>
+        </div><br />
+
+        <div className="input-field">
+          <label className="active" >Email:</label>
+          <input name="email" type="email" value={this.state.email} onChange={this.changeHandler} className="validate" />
+        </div><br />
+
+        <div className="input-field">
+          <label className="active" >Subject:</label>
+          <input name="subject" type="text" value={this.state.subject} onChange={this.changeHandler}/>
+        </div> <br />
+
+        <div className="input-field">
+          <label className="active" >Quote:</label>
+          <input name="quote" type="text" value={this.state.quote} onChange={this.changeHandler}/>
+        </div><br />
+
+        <div className="input-field">
+          <label className="active" >Message:</label>
+          <textarea name="message" type="textarea" value={this.state.message} onChange={this.changeHandler} className="materialize-textarea" ></textarea>
+        </div><br />
+
+        <input type="submit" value="Submit" className="btn"/>
+      </form>
+      </div>
+      </div>
+      <div class="col s12 m4 l2"></div>
+      </div>
   );
 }
 }

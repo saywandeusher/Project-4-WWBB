@@ -5,7 +5,7 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <div id="Home" className="home-content">
+      <div id="home" className="main-content">
 
         <div className="home-content-1">
           <h1>Singapore's Best Entertainment Dance Crew</h1>
@@ -17,8 +17,6 @@ export default class Home extends React.Component {
         </div>
 
         <div className="home-content-2">
-          <h3>Want a performance from us?</h3>
-          <p>Contact us now!</p>
           <Form />
         </div>
 

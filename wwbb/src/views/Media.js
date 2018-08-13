@@ -5,7 +5,7 @@ export default class Media extends React.Component {
 
   render() {
     return (
-      <div id="media" className="media-content">
+      <div id="media" className="main-content">
 
         <div className="media-content-1">
           <h1>Media</h1>
@@ -17,8 +17,6 @@ export default class Media extends React.Component {
         </div>
 
         <div className="media-content-3">
-          <h3>Like what we do?</h3>
-          <p>Contact us now!</p>
           <Form />
         </div>
 
