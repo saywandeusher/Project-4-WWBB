@@ -16,7 +16,7 @@ class App extends React.Component{
     return (
       <Router>
         <div className="container">
-        
+
             <div className="nav-logo">
               <p>WWBB</p>
             </div>
@@ -45,6 +45,11 @@ class App extends React.Component{
             <Route path="/media" component={Media} />
             <Route path="/contact" component={Contact} />
 
+            <hr />
+
+            <div className="footer">
+              <p>This is the footer lol..</p>
+            </div>
         </div> 
       </Router>
     );
