@@ -12,31 +12,32 @@ class App extends React.Component{
     this.state = {};
   }
 
+
   render() {
     return (
       <Router>
         <div className="container">
+          <div className="nav-container">
 
-            <div className="nav-logo">
-              <p>WWBB</p>
-            </div>
+            <a href="/" className="brand-logo">WWBB</a>
 
-            <div className="nav-bar">
-              <ul>
+              <ul id="slide-out" className="sidenav">
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link className="sidenav-close" to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <Link className="sidenav-close" to="/about">About</Link>
                 </li>
                 <li>
-                  <Link to="/media">Media</Link>
+                  <Link className="sidenav-close" to="/media">Media</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <Link className="sidenav-close" to="/contact">Contact</Link>
                 </li>
               </ul>
-            </div>
+              <a href="#" data-target="slide-out" className="sidenav-trigger right"><i className="material-icons">menu</i></a>
+
+          </div>
 
             <hr />
 
