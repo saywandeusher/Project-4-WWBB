@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 export default class MediaContent extends React.Component {
 
   render() {

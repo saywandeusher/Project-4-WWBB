@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/forms.css'
 
 export default class Form extends React.Component {
   constructor() {
@@ -30,36 +31,37 @@ handleClick = (event) => {
 
 render() {
   return (
-    <div className="row">
-    <div class="col s12 m4 l2"></div>
-    <div className="col s12 m4 l8">
+    <div className="container">
     <div className="card-panel z-depth-5">
-      <form onSubmit={this.handleClick}>
+    <div className="row">
+    
+      <form className="col s12"  onSubmit={this.handleClick}>
 
         <h4>Want a performance from us?</h4>
         <h5>Contact Us now!</h5><br />
-
-        <div className="input-field">
+        <div className="row">
+        <div className="input-field col s6">
           <label className="active" >Name:</label>
           <input name="name" type="text" value={this.state.name} onChange={this.changeHandler}/>
-        </div><br />
+        </div>
 
-        <div className="input-field">
+        <div className="input-field col s6">
           <label className="active" >Email:</label>
           <input name="email" type="email" value={this.state.email} onChange={this.changeHandler} className="validate" />
         </div><br />
-
-        <div className="input-field">
+        </div>
+        <div className="row">
+        <div className="input-field col s7">
           <label className="active" >Subject:</label>
           <input name="subject" type="text" value={this.state.subject} onChange={this.changeHandler}/>
-        </div> <br />
+        </div>
 
-        <div className="input-field">
+        <div className="input-field col s5">
           <label className="active" >Quote:</label>
           <input name="quote" type="text" value={this.state.quote} onChange={this.changeHandler}/>
         </div><br />
-
-        <div className="input-field">
+        </div>
+        <div className="input-field col s12">
           <label className="active" >Message:</label>
           <textarea name="message" type="textarea" value={this.state.message} onChange={this.changeHandler} className="materialize-textarea" ></textarea>
         </div><br />
@@ -68,7 +70,6 @@ render() {
       </form>
       </div>
       </div>
-      <div class="col s12 m4 l2"></div>
       </div>
   );
 }

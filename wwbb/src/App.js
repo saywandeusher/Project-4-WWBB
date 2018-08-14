@@ -18,7 +18,7 @@ class App extends React.Component{
       <Router>
         <div className="container-fluid">
         <header>
-          <div className="sticky-nav">
+          <div className="nav-wrapper">
 
             <a href="/" className="brand-logo">WWBB</a>
 
