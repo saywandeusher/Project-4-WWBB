@@ -1,6 +1,6 @@
 import React from 'react';
 import Form from '../components/form';
-import './home.css'
+import '../styles/home.css'
 
 export default class Home extends React.Component {
 
@@ -13,9 +13,11 @@ export default class Home extends React.Component {
           </div>
 
         <div className="home-content-2">
-          <h3>We are a dance crew that consist of people from all over the neighbourhood of singapore!</h3>
-          <br />
-          <p>Over 100+ performance and counting!</p>
+          <div className="parallex">
+            <h3>We are a dance crew that consist of people from all over the neighbourhood of singapore!</h3>
+            <br />
+            <p>Over 100+ performance and counting!</p>
+          </div>
         </div>
 
         <div className="home-content-3">

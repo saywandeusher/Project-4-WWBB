@@ -6,13 +6,16 @@ body {
   flex-direction: column;
 }
 
+header {
+  margin: 2% 8%;
+}
+
 main {
   flex: 1 0 auto;
 }
 
-header {
-  margin: 2% 8%;
-
+footer {
+  text-align: center;
 }
 
 .brand-logo ,.material-icons {
@@ -23,6 +26,5 @@ header {
   display: flex;
   text-align: center;
   flex-direction: column;
-  padding-bottom: 100px;
 }
 
