@@ -7,8 +7,45 @@
 
 .home-content-1 {
   display: flex;
+  /* position: relative; */
+  width: 100%;
   align-items: center;
+  text-align: center;
   height: 54rem;
+}
+
+.home-content-1-overlay {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 101%;
+  color: whitesmoke;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.home-content-1-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.home-content-1-text h1 {
+  transform: translateX(82%);
+  width: 38%;
+  margin: 0;
+}
+
+.home-content-1-text hr {
+  width: 33%;
+}
+
+.home-content-1-bgvid {
+  height: 100%;
+  width: 100%;
+  z-index: -2;
 }
 
 .home-content-2 {

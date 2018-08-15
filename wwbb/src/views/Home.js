@@ -1,6 +1,7 @@
 import React from 'react';
 import Form from '../components/form';
 import '../styles/home.css'
+import BgVid from '../components/backgroundVideo'
 
 export default class Home extends React.Component {
 
@@ -9,7 +10,17 @@ export default class Home extends React.Component {
       <div id="home" className="home-content">
 
           <div className="home-content-1">
-            <h1>Singapore's Best Entertainment Dance Crew</h1>
+          <div className="home-content-1-overlay">
+            <div className="home-content-1-text">
+              <hr />
+              <h1>Singapore's Best Entertainment Dance Crew</h1>
+              <hr />
+            </div>
+          </div>
+          <div className="home-content-1-bgvid">
+            <BgVid />
+          </div>
+          
           </div>
 
         <div className="home-content-2">

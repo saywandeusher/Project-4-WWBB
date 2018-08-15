@@ -30,7 +30,7 @@ export default class NavBar extends React.Component {
                             <Link className="sidenav-close" to="/contact">Contact</Link>
                           </li>
                         </ul>
-                        <a href="#" data-target="slide-out" className="sidenav-trigger right"><i className="material-icons">menu</i></a>
+                        <a href="#" data-target="slide-out" className="sidenav-trigger right"><i className="material-icons menu-icon icon-white">menu</i></a>
                     </div>
                 </div>  
         )
