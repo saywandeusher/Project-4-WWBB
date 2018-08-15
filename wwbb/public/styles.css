@@ -11,10 +11,6 @@ body {
   flex-direction: column;
 }
 
-header {
-  position: fixed;
-  width: 100%;
-}
 
 main {
   flex: 1 0 auto;

@@ -17,16 +17,19 @@ class App extends React.Component{
     this.state = {};
   }
 
+
   render() {
     return (
       [
         <NavBar />,
         <main>
           <Switch>
+
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/media" component={Media} />
             <Route path="/contact" component={Contact} />
+
           </Switch>
         </main>,
         <footer>
