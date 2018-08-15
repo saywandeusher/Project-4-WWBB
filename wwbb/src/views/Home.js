@@ -1,5 +1,6 @@
 import React from 'react';
 import Form from '../components/form';
+import '../styles/home.css'
 
 export default class Home extends React.Component {
 
@@ -16,9 +17,7 @@ export default class Home extends React.Component {
           <p>Over 100+ performance and counting!</p>
         </div>
 
-        <div className="home-content-2">
-          <h3>Want a performance from us?</h3>
-          <p>Contact us now!</p>
+        <div className="home-content-3">
           <Form />
         </div>
 
