@@ -28,13 +28,14 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
   width: 100%;
   height: 100%;
+  transform: translate(0%,100%);
 }
 
 .home-content-1-text h1 {
-  transform: translateX(82%);
-  width: 38%;
+  width: 42%;
   margin: 0;
 }
 
@@ -49,20 +50,27 @@
 }
 
 .home-content-2 {
+  height: 54rem;
+  width: 100%;
 }
 
 .home-content-2-text {
   display: flex;
   flex-direction: column;
-  transform: translateY(15%);
   align-items: center;
-  height: 56rem;
-  width: 42rem;
+  margin: 15% 20%;
+  transform: translateY(150%);
+}
+
+
+.home-content-2 img {
+  transform: translate(100%,220%);
 }
 
 .home-content-3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 45rem;
+  height: 54rem;
+  width: 100%;
 }

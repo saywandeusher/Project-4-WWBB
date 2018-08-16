@@ -14,7 +14,7 @@ export default class NavBar extends React.Component {
                 <div className="nav-wrapper">
                     <div className="nav-container">
 
-                        <Link to='/' className="brand-logo">WWBB</Link>
+                        <Link to='/' className="brand-logo"><img src="./images/wwbb.png" width="80" height="auto" /></Link>
 
                         <ul id="slide-out" className="sidenav">
                           <li>
@@ -30,7 +30,7 @@ export default class NavBar extends React.Component {
                             <Link className="sidenav-close" to="/contact">Contact</Link>
                           </li>
                         </ul>
-                        <a href="#" data-target="slide-out" className="sidenav-trigger right"><i className="material-icons menu-icon icon-white">menu</i></a>
+                        <a href="#" data-target="slide-out" className="sidenav-trigger right"><i className="small material-icons menu-icon icon-white">menu</i></a>
                     </div>
                 </div>  
         )
