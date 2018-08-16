@@ -10,6 +10,7 @@
 
 .brand-logo , .menu-icon{
   position: fixed;
+  z-index: 1;
 }
 
 .icon-white {

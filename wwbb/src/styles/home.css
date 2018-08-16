@@ -49,10 +49,15 @@
 }
 
 .home-content-2 {
+}
+
+.home-content-2-text {
   display: flex;
   flex-direction: column;
+  transform: translateY(15%);
   align-items: center;
   height: 56rem;
+  width: 42rem;
 }
 
 .home-content-3 {

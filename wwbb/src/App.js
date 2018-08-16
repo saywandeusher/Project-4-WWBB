@@ -1,6 +1,7 @@
 import React from  'react';
 import ReactDOM from 'react-dom';
 import { HashRouter as Router, BrowserRouter, Switch, Route } from 'react-router-dom';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 //components
 import NavBar from './components/navbar';
@@ -41,11 +42,13 @@ class App extends React.Component{
 }
 
 ReactDOM.render(
+  <ParallaxProvider>
   <BrowserRouter>
   <Router>
   <App />
   </Router>
-  </BrowserRouter>,
+  </BrowserRouter>
+  </ParallaxProvider>,
   document.getElementById('app')
 )
 
