@@ -8,7 +8,7 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <Parallax ref='parallax' pages={3}>
+      <Parallax ref='parallax' pages={4}>
       <div id="home" className="home-content">
 
         <div className="home-content-1">
@@ -53,10 +53,38 @@ export default class Home extends React.Component {
         
 
         <div className="home-content-3">
-          <Form />
+        <Parallax.Layer offset={0} speed={0.1}>
+          <div className="home-content-3-text">
+            <h2>Along the way...</h2>
+            <br />
+            <p>Our Fam grew bigger.</p>
+          </div>
+          </Parallax.Layer>
+          <Parallax.Layer offset={0} speed={0.5}>
+          <div className="gif box">
+            <img src="./images/wwbb1.gif" width="200" height="auto" className="gifone" />
+          </div>
+          </Parallax.Layer>
+          <Parallax.Layer offset={0} speed={0.5}>
+          <div className="gif box">
+            <img src="./images/wwbb2.gif" width="200" height="auto" className="giftwo" />
+            </div>
+          </Parallax.Layer>
+          <Parallax.Layer offset={0} speed={0.5}>
+          <div className="gif box">
+            <img src="./images/wwbb3.gif" width="200" height="auto" className="gifthree" />
+            </div>
+          </Parallax.Layer>
+          <Parallax.Layer offset={0} speed={0.5}>
+          <div className="gif box">
+            <img src="./images/wwbb4.gif" width="200" height="auto" className="giffour" />
+            </div>
+          </Parallax.Layer>
         </div>
 
-
+        <div className="home-content-4">
+          <Form />
+        </div>
 
       </div>
       </Parallax>
